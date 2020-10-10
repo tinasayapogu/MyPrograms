@@ -1,0 +1,21 @@
+def top(stack2):
+    print(stack2[0])                           #showing top
+def pop(stack3):
+    for i in range(len(stack3)):
+        stack3.pop()
+        print(stack3)                          #for pop fn
+        
+stack=[]                                       #pushing elements
+n=int(input("enetr n"))
+for i in range(n):
+    f=int(input("enter elems"))
+    stack.append(f)
+    print("pushing elements for a range n ",stack) 
+if len(stack)==n:
+    print("stack overflow here!!stack full here at this time!!")
+print("stack top is printed:")
+top(stack)
+print('poping elements:')
+pop(stack)
+if stack==[]:
+    print("stack underflow!!stack was in empty state bfr fn used it!!")
