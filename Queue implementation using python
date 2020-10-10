@@ -1,0 +1,34 @@
+def isfull(list1):
+    if len(list1)==n:
+        print("list is  full")
+        
+def peek(list2):
+    print(list2[0])
+
+def isempty(list3):
+    if list3==[]:
+        print("empty list here")
+    else:
+        print("list is not empty")
+def dequeue(list4):
+    for i in range(len(list4)):
+        list4.pop()
+        print(list4)
+        
+list=[]
+n=int(input("enetr n"))
+for i in range(n):
+    f=int(input("enter elems"))
+    list.insert(0,f)
+    print("enqueued list here is: ",list)     # enqueue
+    
+    
+list5=[]   
+print("list is peeked:")
+peek(list)
+print("if list is full checking:")
+isfull(list)
+print("checking for empty list")
+isempty(list5)
+print("dequeuing list here:")
+dequeue(list)
